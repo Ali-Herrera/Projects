@@ -1,0 +1,56 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url("https://eytmk4civ2s.exactdn.com/wp-content/uploads/2021/05/Blog-Post-Headers-31.png?lossy=1&ssl=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+h1, h2, h3 {
+  color: rgb(240, 240, 240);
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+button {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: white;
+  color: navy;
+  margin-left: 45%;
+
+}
+
