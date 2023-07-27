@@ -1,12 +1,12 @@
 
-//NYTIMES link = https://api.nytimes.com/svc/books/v3/lists.json?list-name=hardcover-fiction&api-key=pZd4teWPUf9A9mJYDtuCoxwOQBnf5BAu
-// GOOGLE API = AIzaSyCM6gNVwBQzpE0dVOcGE_aZqb_-_xd4NDA
+//NYTIMES link = https://api.nytimes.com/svc/books/v3/lists.json?list-name=hardcover-fiction&api-key= + API_key
+// GOOGLE API = my_API
 
 //var nytimesKey = config.NYT_KEY;
 //var googleBooksKey = config.GOOGLE_BOOKS_KEY;
 
 
-fetch('https://api.nytimes.com/svc/books/v3/lists.json?list-name=hardcover-fiction&api-key=pZd4teWPUf9A9mJYDtuCoxwOQBnf5BAu' ,{
+fetch('https://api.nytimes.com/svc/books/v3/lists.json?list-name=hardcover-fiction&api-key= + API_Key' ,{
     method: 'get',
   })
   .then(response => { return response.json(); })
