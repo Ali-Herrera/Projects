@@ -8,7 +8,7 @@ document.querySelector('#question').addEventListener('click', getFetch)
         .then(res => res.json()) // parse response as JSON
         .then(data => {
           console.log(data)
-          document.querySelector('h2').innerText = data.results[1].question;
+          document.querySelector('h2').innerText = decodeChars(data.results[1].question);
 
           
           document.querySelector('#answer').addEventListener('click', getAnswer)
@@ -22,5 +22,11 @@ document.querySelector('#question').addEventListener('click', getFetch)
             console.log(`error ${err}`)
         });
   }
+
+  function decodeChars(specialCharacterString) {
+    const text = document.createElement('textarea');
+    text.innerHTML = specialCharacterString;
+    return text.value;
+}
 
 
